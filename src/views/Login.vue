@@ -94,20 +94,20 @@
 			resetForm(formName) {
 				this.$refs[formName].resetFields();
 			},
-			getCaptcha() {
-				this.$axios.get('/captcha').then(res => {
+			// getCaptcha() {
+			// 	this.$axios.get('/captcha').then(res => {
 
-					console.log("/captcha")
-					console.log(res)
+			// 		console.log("/captcha")
+			// 		console.log(res)
 
-					this.loginForm.token = res.data.data.token
-					this.captchaImg = res.data.data.captchaImg
-					this.loginForm.code = ''
-				})
-			}
+			// 		this.loginForm.token = res.data.data.token
+			// 		this.captchaImg = res.data.data.captchaImg
+			// 		this.loginForm.code = ''
+			// 	})
+			// }
 		},
 		created() {
-			this.getCaptcha()
+			// this.getCaptcha()
 		}
 	}
 </script>

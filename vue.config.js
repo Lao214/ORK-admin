@@ -7,5 +7,8 @@ module.exports = {
         args[0].title= '富士康大学OKRs系统'
         return args
       })
+  },
+  devServer: {
+    port: '8087'
   }
 }
